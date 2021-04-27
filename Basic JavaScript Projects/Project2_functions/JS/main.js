@@ -14,7 +14,7 @@ function myFunction() {
      document.getElementById("Concatenate").innerHTML = sentence;// this states that the element id Concatenate will display the sentence variable
  }
 
- function myFunction3() {
+ function myFunction3() {           // this function will tell us the date and time
 var Date = document.getElementById().id;
-document.getElementById("demo").innerHTML = Date;
+document.getElementById("time").innerHTML = Date;
 }
