@@ -3,6 +3,6 @@ function addition_Function() {
     document.getElementById("Math").innerHTML = "34 + 35 = " + addition;
 }
 function subtraction_Function() {
-    var Subtraction = 200 - 100;
+    var subtraction = 200 - 100;
     document.getElementById("Nums").innerHTML = "200 - 100 = " + subtraction;
 }
