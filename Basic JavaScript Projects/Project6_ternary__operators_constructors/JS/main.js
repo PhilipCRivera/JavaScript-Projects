@@ -15,12 +15,12 @@ function Voter_Function() { //this Voter_Function will let you know if you're ol
 }
 
  function Vehicle(Make, Model, Year, Color) {// the function Vehicle will show the make, model, year, and color
-     this.Vehicle_Make = Make;
+     this.Vehicle_Make = Make; //a constructor function that uses the "this" keyword
      this.Vehicle_Model = Model;
      this.Vehicle_Year = Year;
      this.Vehicle_Color = Color;
  }
- var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
+ var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");// a constructor function that uses the "new" keyword
  var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White");
  var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
  function myFunction() {
