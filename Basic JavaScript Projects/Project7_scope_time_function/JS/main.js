@@ -28,3 +28,37 @@ function Add_numbers_4() {
 }
 Add_numbers_1();
 Add_numbers_2();
+
+function get_Date() {
+    if (new Date().getHours()< 18) {
+        document.getElementById("Greeting").innerHTML = "How are you today?";
+    }
+}
+
+function get_Time() {
+    if (new Time().getTime()<20) {
+        document.getElementById("Clock").innerHTML = "Do you have the time?";
+    }
+}
+
+function Age_Function() {
+    Age = document.getElementById("Age").value;
+    if (Age >= 18) {
+        Vote = "You are old enough to vote!";
+    }
+    else {
+        Vote = "You are not old enough to vote!";
+    }
+    document.getElementById("How_old_are_you?").innerHTML = Vote;
+}
+
+function Badges_Function() {
+    Badges = document.getElementById("Badges").value;
+    if (Badges >= 8) {
+        Elite = "You are ready to face the Elite Four!";
+    }
+    else {
+        Elite = "You are not ready to face the Elite FOur!";
+    }
+    document.getElementById("How_many_gym_badges_do_you_have?").innerHTML = Elite;
+}
