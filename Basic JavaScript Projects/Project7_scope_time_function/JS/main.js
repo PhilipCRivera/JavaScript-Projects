@@ -29,19 +29,13 @@ function Add_numbers_4() {
 Add_numbers_1();
 Add_numbers_2();
 
-function get_Date() {
+function get_Date() { //this if statement will display "How are you today?" if it meets the right requirments
     if (new Date().getHours()< 18) {
         document.getElementById("Greeting").innerHTML = "How are you today?";
     }
 }
 
-function get_Time() {
-    if (new Time().getTime()<20) {
-        document.getElementById("Clock").innerHTML = "Do you have the time?";
-    }
-}
-
-function Age_Function() {
+function Age_Function() { //this else statment will help determine if you are old enought to vote
     Age = document.getElementById("Age").value;
     if (Age >= 18) {
         Vote = "You are old enough to vote!";
@@ -52,13 +46,28 @@ function Age_Function() {
     document.getElementById("How_old_are_you?").innerHTML = Vote;
 }
 
-function Badges_Function() {
+function Badges_Function() { //This is an else statement
     Badges = document.getElementById("Badges").value;
-    if (Badges >= 8) {
+    if (Badges >= 8) { // if you have 8 badges or more it will display the message below
         Elite = "You are ready to face the Elite Four!";
     }
-    else {
+    else { //if we dont meet the if requirement than the else statement will display the message below
         Elite = "You are not ready to face the Elite FOur!";
     }
     document.getElementById("How_many_gym_badges_do_you_have?").innerHTML = Elite;
+}
+
+function Time_function() { //This Time_function() will use the computers clock to tell you whether its morning, afternoon, or evening time
+    var Time = new Date().getHours();
+    var Reply;
+    if(Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time >= 12 == Time < 18) {
+        Reply = "It is afternoon.";
+    }
+    else {
+        Reply = "It is evening time.";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
 }
