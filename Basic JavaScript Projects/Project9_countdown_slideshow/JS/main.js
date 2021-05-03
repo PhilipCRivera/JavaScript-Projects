@@ -1,4 +1,4 @@
-function countdown() {
+function countdown() { //this timer will countdown the seconds till it hits -1 in which an alert will appear
     var seconds = document.getElementById("seconds").value ;
 
     function tick() {
@@ -6,12 +6,12 @@ function countdown() {
         timer.innerHtml = seconds;
         setTimeout(tick, 1000);
     if (seconds == -1) {
-        alert ("Time's Up!");
+        alert ("Time's Up!"); //will popup and appear on the screen
     }
     }
     tick();
 }
-
+// JavaScript code to create a slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,7 +25,7 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n) { //how the slideshow will operate
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
