@@ -41,7 +41,7 @@ function constant_function() {
 }
 
 var  X = 82;
-document,write(X); // This is an example of a Let Keyword where the output of this code would be: 82, 33 ,82
+document.write(X); // This is an example of a Let Keyword where the output of this code would be: 82, 33 ,82
 {
     let X = 33; 
     document.write("<br>" + X);
@@ -65,7 +65,7 @@ let car = {
     make: "Dodge ",
     model: "Viper ",
     year: "2021 ",
-    color: "red ",
+    color: "Red ",
     description : function() {
         return "This car is a " + this.year + this.color + this.make + this.model;
     }
@@ -75,10 +75,22 @@ document.getElementById("Car_Object").innerHTML = car.description();
 let clothing = {
     type: "Hoodie ",
     designer: "Fashion Nova ",
-    color: "rainbow ",
+    color: "Rainbow ",
     size: "large ",
     description : function() {
-        return " My favorite piece of clothis is my " + this.size + this.color + this.type + "from " + this.designer;
+        return " My favorite piece of clothing is my " + this.size + this.color + this.type + "from " + this.designer;
     }
 };
 document.getElementById("Clothing_Object").innerHTML = clothing.description();
+
+// a loop with a break statement
+
+var text = "";
+var i;
+  for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + "<br>";
+    }
+document.getElementById("break").innerHTML = text;
+
+

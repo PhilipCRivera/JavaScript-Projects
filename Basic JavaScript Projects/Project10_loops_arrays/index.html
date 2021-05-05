@@ -3,7 +3,7 @@
     <head>
         <title>Loops Assignment</title>
         <meta charset="UTF-8">
-        <script src="./JS/main.js"></script>
+        <script src="./JS/main.js"defer></script>
     </head>
     <body>
         <p id="Loop"></p>
@@ -27,6 +27,18 @@
         <br>
         <p>This example calls a function which returns the value of PI:</p>
         <p id="demo"></p>
+        <br>
+        <p id="break"></p>
+        <script>
+            var text = "";
+            var i;
+               for (i = 0; i < 10; i++) {
+               if (i === 3) { break; }
+               text += "The number is " + i + "<br>";
+            }
+            document.getElementById("break").innerHTML = text;
+        </script>
+        <br>
         <script>
             function myFunction() {
                 return Math.PI;
