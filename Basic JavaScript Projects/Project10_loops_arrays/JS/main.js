@@ -39,3 +39,46 @@ function constant_function() {
     Video_Game_Console.price = "600";
     document.getElementById("Constant").innerHTML = "The color of the " + Video_Game_Console.type + " was " + Video_Game_Console.color;
 }
+
+var  X = 82;
+document,write(X); // This is an example of a Let Keyword where the output of this code would be: 82, 33 ,82
+{
+    let X = 33; 
+    document.write("<br>" + X);
+}
+document.write("<br>" + X);
+
+// But if we wrote it as follows:
+
+var  X = 82;
+document.write(X);
+{
+    var X = 33;
+    document.write("<br>" + X);
+}
+document.write("<br>" + X); // the Output would be: 82, 33, 33
+// this is because the var keyword cannot have block scope(access limited to inside the block), while the let keyword can.
+
+// Here is an example of creating an object with properties and a method in JavaScript
+
+let car = {
+    make: "Dodge ",
+    model: "Viper ",
+    year: "2021 ",
+    color: "red ",
+    description : function() {
+        return "This car is a " + this.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("Car_Object").innerHTML = car.description();
+
+let clothing = {
+    type: "Hoodie ",
+    designer: "Fashion Nova ",
+    color: "rainbow ",
+    size: "large ",
+    description : function() {
+        return " My favorite piece of clothis is my " + this.size + this.color + this.type + "from " + this.designer;
+    }
+};
+document.getElementById("Clothing_Object").innerHTML = clothing.description();
