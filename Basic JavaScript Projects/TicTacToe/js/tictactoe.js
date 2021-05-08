@@ -165,7 +165,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             //this variable creates a loop.
             const animationLoop = requestAnimationFrame(animateLineDrawing);
             //this method clears content from last loop iteration.
-            c.clearReact(0, 0, 608, 608)
+            c.clearRect(0, 0, 608, 608)
             //this method starts a new path.
             c.beginPath() ;
             //this method moves us to a staring point for our line.
@@ -202,7 +202,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             //this line starts our animation loop.
             const animationLoop = requestAnimationFrame(clear) ;
             //this line clears our canvas.
-            c.clearReact(0, 0, 608, 608) ;
+            c.clearRect(0, 0, 608, 608) ;
             //this line stops our animation loop.
             cancelAnimationFrame(animationLoop);
         }
