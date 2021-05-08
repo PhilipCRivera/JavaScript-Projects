@@ -146,7 +146,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 //this line accesses our html canvas element.
     const canvas = document.getElementById('win-lines')
     //this line gives us access to methods and properties to use on canvas.
-    const c = canvas.getContext('2d)');
+    const c = canvas.getContext('2d');
     //this line indicates where the start of a lines x axis is.
     let x1 = coordX1,
         //this line indicates where the start of lines y axis is.
@@ -165,7 +165,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             //this variable creates a loop.
             const animationLoop = requestAnimationFrame(animateLineDrawing);
             //this method clears content from last loop iteration.
-            c.clearReact(0,0, 608, 608)
+            c.clearReact(0, 0, 608, 608)
             //this method starts a new path.
             c.beginPath() ;
             //this method moves us to a staring point for our line.
